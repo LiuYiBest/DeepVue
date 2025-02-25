@@ -1,5 +1,8 @@
 <template>
   <div class="login-container">
+    <h1 class="logo-title">
+      {{ $t("msg.test") }}
+    </h1>
     <el-form
       ref="loginFormRef"
       :model="loginForm"
