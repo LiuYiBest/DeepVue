@@ -10,9 +10,14 @@ const isMobile = computed(() => {
 
 // 动态计算rem的基准值 ，最大为40px,根据用户手机屏幕计算，并赋值给html的font-size
 const rem = computed(() => {
-  const base = Math.min(width.value / 375, 40)
-  document.documentElement.style.fontSize = `${base}px`
-  return base
+//   监听屏幕宽度
+    document.addEventListener('DOMContentLoaded', function () {
+        const html: HTMLElement | null = document.querySelector('html')
+        if (!html) return
+        let fontSize = window.innerWidth / 10
+        fontSize = fontSize > 40 ? 40 : fontSize
+        html.style.fontSize = `${fontSize}px`
+  })
 })
 
 export default {
