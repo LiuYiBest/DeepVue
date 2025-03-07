@@ -25,7 +25,8 @@
     "react-dom": "^18.2.0",
     "dayjs": "^1.11.10",
     "lodash": "^4.17.21",
-    "react-use": "^17.5.0"
+    "react-use": "^17.5.0",
+    "ahooks": "^3.7.10"
   },
   "devDependencies": {
     "@types/node": "^22.13.5",
