@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 你的自定义样式可以放在这里 */
+@layer components {
+  .btn-primary {
+    @apply btn btn-primary;
+  }
+  
+  .card-custom {
+    @apply card bg-base-100 shadow-xl;
+  }
+  
+  .input-custom {
+    @apply input input-bordered w-full;
+  }
+} 
